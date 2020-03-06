@@ -1,0 +1,308 @@
+/* ESTILOS GENERALES */
+html, body{
+    height: 100%;
+}
+/* MODIFICAR MODELO DE CAJA CSS */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* RESETAR MARGENES Y PADDING */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container, #seccion2{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/* ESTILO DE LOS CONTENIDOS */
+/* ESTILO DE HEADER */
+header{
+    background-color: green;
+   
+}
+#logo{
+    float: left;
+}
+#info-contact{
+    float: right;
+    margin-top: 22px;
+}
+#info-contact i {
+	color: #fff;
+	margin-right: 14px;
+	font-size: 1.26rem;
+}
+/* SECCION 1 */
+article > section:nth-child(1){
+    background-image:linear-gradient( to left top, rgba(55, 185, 30, 0.83),rgba(25, 59, 244, 0.83)), url(../images/fondo_superior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+#intro{
+    display: flex;
+    padding: 50px 0;
+    flex-flow: row wrap;
+    height: 100%;
+    min-height: 600px;
+}
+#descripcion {
+	flex-basis: 60%;
+    padding: 0 1em 0 0;
+    flex-grow: 2;
+    color: #fff;
+}
+h1{
+    font-size: 2.80rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+h1 {
+	font-size: 2.66rem;
+	font-family: Arial, Helvetica, tahoma ,sans-serif;
+	margin-bottom: 25px;
+}
+#descripcion p {
+	margin-bottom: 33px;
+	line-height: 1.65;
+}
+#formulario {
+	background-color:rgba(0, 0, 0, 0.8);
+    padding: 20px 1rem;
+    flex-basis: 30%;
+    color:#fff;
+}
+#formulario h2 {
+	font-size: 1.4rem;
+	margin-bottom: 40px;
+}
+label {
+	display: block;
+	margin: 10px 0;
+	font-size: 0.90rem;
+}
+input[type="text"], input[type="email"] {
+	display: inline-block;
+	width: 100%;
+	height: 45px;
+	padding: 0 1rem;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+}
+input[type="submit"] {
+	display: inline-block;
+	border: none;
+	background-color: #008000;
+	color: #fff;
+	width: 100%;
+	padding: 10px 1em;
+	margin: 25px auto;
+	font-size: 1rem;
+}
+#descripcion i {
+	font-size: 0.9rem;
+	border: 1px solid;
+	border: 50%;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: #fefefe;
+	color: #008000;
+}
+small a{
+    color: #fff;
+}
+/* SECCION 2 */
+article > section:nth-child(2){
+	padding: 60px 0;
+}
+#seccion2{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+#seccion2 i {
+	color: #13ab3b;
+	font-size: 2.50rem;
+	border: 1px solid;
+	border-radius: 50%;
+	padi: ;
+	padding: 48px 0;
+	width: 140px;
+	height: 140px;
+	margin-bottom: 35px;
+}
+.col h2 {
+	font-size: 1.10rem;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+/* SECCION 3 */
+
+article > section:nth-child(3){
+background-color: #f6f9fd;
+padding: 40px 0;
+}
+#seccion3{
+	display: flex;
+	flex-flow: row wrap;	
+}
+#seccion3 div{
+	flex-basis: 60%;
+	padding-right: 1.90rem;
+}
+video{
+	flex-basis: 40%;
+	width: 40%;
+	height: 100%;
+	/* align-self: flex-start; ---- > tambien se puede usar para acomodar el ajuste*/ 
+}
+h2{
+	margin-bottom: 20px;
+}
+#seccion3 a{
+	display: inline-block;
+	background-color: #008000;
+	color: #fff;	
+	text-decoration: none;
+	padding: 12px 10rem;
+	margin: 25px 0;
+}
+#seccion3 p {
+
+	text-align: justify;
+
+}
+/* SECCION 4 */
+article > section:nth-child(4){
+	padding: 60px 0 0;
+	text-align: center;
+
+}
+#seccion4 {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px auto;
+}
+.card img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.card {
+	margin: 20px;
+	box-shadow: 2px 3px 5px 10px #ccc9c9;
+	padding-bottom: 35px;
+}
+.card p {
+	font-size: 0.9rem;
+	padding: 13px 0em;
+}
+.card i {
+	font-size: 1.50rem;
+	color: #107ba7;
+	margin: 0px 0.2em;
+}
+/*SECCION 5*/
+article > section:nth-child(5){
+	background-image: linear-gradient( to left top, rgba(16, 123, 176, 0.8),rgba(16, 123, 167, 0.8)), url(../images/fondo_inferior.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+#seccion5 {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	min-height: 330px;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+#seccion5 p {
+	padding: 20px 0;
+}
+#seccion5 h2 {
+	margin-bottom: 0;
+}
+#seccion5 a {
+	display: block;
+	background-color: #37b91e;
+	color: #fff;
+	text-decoration: none;
+	padding: 12px 2em;
+}
+#seccion5 a:hover {
+	background-color: #358b34;
+	transition: all 0.5s;
+}
+/* PIE DE PAGINA */
+footer {
+	background-color: #2C2A2A;
+	padding: 20px 0;
+}
+.copyright {
+	float: right;
+	padding: 8px;
+	color: #c0bcbc;
+}
+.nav{
+	float: left;
+}
+#piedepagina{
+	overflow: hidden;
+}
+.nav li {
+	display: inline-block;
+	font-size: 0.8rem;
+	padding: 12px 0 0;
+}
+.nav li a {
+	color: #c0dcdc;
+	text-decoration: none;
+	padding-right: 1.5rem;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+/* MEDIA-QUERIES */
+/* APLICAR LOS SIGUIENTES ESTILO CUANDO EL TAMAÑO DE VIEWPORT SE ENCUENTRA EN UN RANGO DE  960px - 1199px */
+
+@media screen and (min-width:960px) and (max-width:1199){
+	.col h3{
+		font-size: 1.05rem;
+	}
+	h2{
+		margin-bottom:  20px;
+		font-size: 1.43rem;
+	}
+	/* APLICAR LOS SIGUIENTES ESTILO CUANDO EL TAMAÑO DE VIEWPORT SE ENCUENTRA EN UN RANGO DE  660px - 959px */
+	@media screen and (min-width:660px) and (max-width:959px){
+		
+		#intro{
+			flex-flow: column wrap;
+		}
+		#descripcion{
+			flex-basis: 100%;
+			padding: 0 0 0 0;
+			flex-grow: 0;
+		}
+		article > section:nth-child(2){
+			padding: 20px 0;
+		}
+		#seccion2{
+			flex-flow: column wrap;
+		}
+		.col{
+			padding: 30px 0;
+		}
+
+}
